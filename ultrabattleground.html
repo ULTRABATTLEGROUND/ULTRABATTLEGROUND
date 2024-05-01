@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra Battleground </title>
+    <link  rel="stylesheet" href = "menuTextures.css"></link> 
+</head>
+<body>
+<div class="container">
+    <div class="logo">
+        <h1>Ultra Battleground</h1>
+    </div>
+    <div class="menu">
+        <button class="menu-item" id="play.button" >Play</button>
+        <button class="menu-item"id="about.button" >About game<button>
+        <button class="menu-item"id="settings.button">Settings</button>
+    </div>
+    <div id="language-form">
+    <label for="language-select">Select language:</label>
+        <select id="language-select" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="pl">Polski</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
+            <option value="lt">Lietuviškai</option>
+        <!-- Add more options for other languages as needed -->
+        </select>
+    </div>
+</div>
+<div class="gameInfo">
+    <p>Ultrabattleground is a computer strategic game.</p>
+</div>
+<div class="gameLoading">
+    <label for="country-select">Select country:</label>
+        <select id="country-select" onchange="loadGame()">
+            <option value="lt">Lithuania</option>
+            <option value="pl">Poland</option>    
+        <!-- Add more options for other countries as needed -->
+        </select>
+</div>
+<script src= "changeLang.js"></script>
+<script src= "menu.js"></script>
+<script src= "game.js"></script>
+</body>
+</html>
+
+
+
